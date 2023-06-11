@@ -9,11 +9,11 @@ app.use(router);
 app.use(router2);
 const port = process.env.PORT || 3000;
 const HomeScreenVideoData = require("../src/models/home");
-
+const hostname = "0.0.0.0";
 app.get("/", async (req, res) => {
   res.send("hello from Sooraj");
 });
 
-app.listen(port, () => {
+app.listen(port, hostname, () => {
   console.log("connection is live at port number", port);
 });
