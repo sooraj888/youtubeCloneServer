@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 const HomeScreenVideoData = require("../src/models/home");
 const hostname = "0.0.0.0";
 app.get("/", async (req, res) => {
-  res.send("hello from Sooraj");
+  res.send("hello from soori");
 });
 
 app.listen(port, hostname, () => {
