@@ -6,6 +6,7 @@ require("../src/db/connection");
 
 const app = express();
 app.use(express.json());
+app.use(express.static("public"));
 app.use(router);
 app.use(router2);
 app.use(router3);
